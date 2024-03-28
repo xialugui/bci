@@ -6,9 +6,22 @@ authors = ["xialugui <xialugui@139.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-
+python = ">=3.11,<3.12"
+tensorflow-io-gcs-filesystem = "0.31.0"
+mne = "^1.6.1"
+pyriemann = "^0.4"
+matplotlib = "^3.8.3"
+scikit-learn = "^1.4.1.post1"
+jupyter = "^1.0.0"
+tensorflow = "^2.16.1"
+tensorflow-intel = { version = "^2.16.1", platform = "win32" }
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.source]]
+name = "ali"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
